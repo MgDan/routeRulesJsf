@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Dinamica</title>
+    </h:head>
+    <h:body>
+        <h1></h1>
+        <h:form><!--aqui no funcionara <h:link>  solo funciona con navegacion implicita-->
+            <ul>
+                <li><h:commandLink value="pagina 1" action="page1" /></li><!--Si esta entre 2 h:form no va a jalar-->
+                <li><h:commandButton value="pagina 2" action="page2" /></li>
+            </ul>
+        </h:form>
+    </h:body>
+</html>
+

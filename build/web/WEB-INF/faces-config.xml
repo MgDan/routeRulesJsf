@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+
+    <navigation-rule>
+        <from-view-id>
+            /dinamica.xhtml
+        </from-view-id>
+        <navigation-case>
+            <from-outcome>page1</from-outcome>
+            <to-view-id>/paginauno.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>page2</from-outcome>
+            <to-view-id>paginados.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/index.xhtml</from-view-id>
+        <navigation-case>
+            <from-action>1</from-action>
+            <to-view-id>dias.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-action>2</from-action>
+            <to-view-id>tardes.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-action>3</from-action>
+            <to-view-id>noches.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <managed-bean>
+        <managed-bean-name>navigationBean</managed-bean-name>
+        <managed-bean-class>bean.NavigationBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+</faces-config>
